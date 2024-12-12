@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <h1> Welcome to My Website ‧˚₊⋅ ୨୧ ⋅₊˚</h1>    
+</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <p><audio controls autoplay>
+        <source src="robbers.mp3" type="audio/mp3">
+      </audio> </p>
+<div class="container">
+        <div class="about-section">
+            <h2>About This Website</h2>
+            <p>This website is a fun space where you can learn more about me!</p>
+        </div>
+        <script>
+            function updateClock() {
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
+        
+                // Add leading zero if minutes/seconds are less than 10
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+        
+                // Format the time string
+                var timeString = hours + ":" + minutes + ":" + seconds;
+        
+                // Display the time
+                document.getElementById('clock').textContent = timeString;
+            }
+        
+            // Update the clock every second
+            setInterval(updateClock, 1000);
+        
+            // Initialize clock when page loads
+            updateClock();
+        </script>
+        <div class="image-box">
+            <img src="sonnyangel.JPEG" alt="First image" class="rounded-image">
+<div class="text-box">
+       <p> HI EVERYONE!</p>
+      </div>
+<div class="text-box2">
+       <p> this website is all...</p>
+      </div>
+<div class="image-box2">
+    <img src="love.JPG" alt="Second Image">
+</div>
+ <div class="social-media">
+        <a href="https://instagram.com/eunifae" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://tiktok.com" target="_blank" class="social-icon tiktok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://twitter.com/de0garden" target="_blank" class="social-icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+</div>
+   <footer>
+        <p>FAYRY Site ✿ 2024</p>
+    </footer>
+</div>
+</body>
+</html> 

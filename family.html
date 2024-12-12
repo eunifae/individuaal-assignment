@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<head>
+    <title>Family and Friends</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #ffe4e6; 
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('pinkcontrabg.JPEG'); 
+            background-size: cover;
+            background-position: center;
+            padding: 40px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-family: 'sloop', sans-serif;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ffffff;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb3d9;
+            padding: 15px 0;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #ff80b3;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff4da6;
+        }
+
+        /* Main Container for Family and Friends */
+        .section-container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        /* Family Section Container */
+        .family-container {
+            background-image: url('cutepattern.jpeg');
+            background-size:cover;
+            background-position: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .family-container h2 {
+            font-size: 2em;
+            color: #693d0e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .family-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .family-box {
+            width: 350px; /* Larger box size */
+            height: 350px; /* Larger box size */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .family-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .friends-container {
+            background-image: url('starss.jpeg');
+            background-size:cover;
+            background-position: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .friends-container h2 {
+            font-size: 2em;
+            color: #693d0e;;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .friends-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .friend-box {
+            width: 350px; /* Larger box size */
+            height: 350px; /* Larger box size */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .friend-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .friend-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark background for readability */
+            color: #fff;
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+       
+.family-section, .friends-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    width: 100%; 
+
+
+.family-box, .friend-box {
+    width: 100%; 
+    height: 0; 
+    padding-bottom: 100%;  
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    position: relative;
+}
+
+.family-box img, .friend-box img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+}
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em; 
+            }
+
+            .family-section, .friends-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Family and Friends</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+
+<div class="section-container">
+
+    
+    <div class="family-container">
+        <h2>My Family</h2>
+        <div class="family-section">
+            <div class="family-box">
+                <img src="myfam.jpg" alt="famm" style="width:250px;height:250px;">
+                <div class="family-caption">Family Member 1</div>
+            </div>
+            <div class="family-box">
+                <img src="meandfawwaz.jpg" alt="Family Member 2" style="width:250px;height:250px;">
+                <div class="family-caption">Family Member 3</div>
+            </div>
+            <div class="family-box">
+                <img src="familia.jpg" alt="Family Member 3" style="width:250px;height:250px;">
+                <div class="family-caption">Family Member 2</div>
+            </div>
+            <div class="family-box">
+                <img src="olivia.jpg" alt="viaa"style="width:250px;height:250px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="friends-container">
+        <h2>My Friends</h2>
+        <div class="friends-section">
+            <div class="friend-box">
+                <img src="mereka.jpg" alt="Friend 1"style="width:250px;height:250px;">
+            </div>
+            <div class="friend-box">
+                <img src="nisa.jpg" alt="Friend 2"style="width:250px;height:250px;">
+            </div>
+            <div class="friend-box">
+                <img src="hehe.jpg" alt="Friend 2"style="width:250px;height:250px;">
+            </div>
+            <div class="friend-box">
+                <img src="anisnurin.jpg" alt="Friend 2"style="width:250px;height:250px;">
+               
+            </div>
+            <div class="friend-box">
+                <img src="mia.jpg" alt="Friend 2"style="width:250px;height:250px;">
+                
+            </div>
+            <div class="friend-box">
+                <img src="zarith.jpg" alt="Friend 2"style="width:250px;height:250px;">
+                
+            </div>
+            <div class="friend-box">
+                <img src="izzy.jpg" alt="Friend 2"style="width:250px;height:250px;">
+                
+            </div>
+            <div class="friend-box">
+                <img src="deja.jpg" alt="Friend 6"style="width:250px;height:250px;">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
